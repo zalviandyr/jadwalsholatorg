@@ -1,7 +1,11 @@
 name: Workflow for update adzans
 
 on:
+  push:
+    branches:
+      - master
   schedule:
+    # TODO: convert UTC to GMT+7
     - cron: "0 0 1 * *"
 
 jobs:
